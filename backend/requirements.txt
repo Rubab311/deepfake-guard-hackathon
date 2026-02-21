@@ -1,0 +1,22 @@
+# Deepfake Guard Backend - ML Detection API
+# CNN-based detection: ResNet / EfficientNet + Face detection pipeline
+# Compatible with FaceForensics++, Celeb-DF trained models
+
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+pillow>=10.0.0
+numpy>=1.24.0
+
+# PyTorch - CNN models (ResNet, EfficientNet)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Face detection pipeline
+opencv-python-headless>=4.8.0
+
+# Hugging Face transformers - pre-trained deepfake model (fallback)
+# Model: dima806/deepfake_vs_real_image_detection (ViT-based, 99%+ accuracy)
+# For ResNet/EfficientNet on FaceForensics++/Celeb-DF: train with train.py, load weights
+transformers>=4.35.0
+huggingface-hub>=0.20.0
