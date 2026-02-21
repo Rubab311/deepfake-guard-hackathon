@@ -5,9 +5,11 @@ Uses CNN (ResNet/EfficientNet) + face detection or Hugging Face transformers.
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles  # <-- Add this
 
 from .detector import analyze
 from .config import ALLOWED_EXTENSIONS
+
 
 app = FastAPI(
     title="Deepfake Guard API",
@@ -48,3 +50,9 @@ async def analyze_image(file: UploadFile = File(...)):
         return result
     except Exception as e:
         raise HTTPException(500, str(e))
+
+
+# -------------------------------
+# Serve React frontend build
+# -------------------------------
+app.mount("/", StaticFiles(directory="static", html=True), name="frontend")
