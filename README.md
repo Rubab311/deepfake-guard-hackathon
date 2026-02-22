@@ -1,6 +1,13 @@
 # Deepfake Guard
 
-AI-powered deepfake detection using CNN (ResNet/EfficientNet) + face detection pipeline, trained on FaceForensics++ / Celeb-DF style datasets.
+AI-powered deepfake detection using CNN (ResNet/EfficientNet) + face detection pipeline, trained on FaceForensics++ / Celeb-DF style datasets built with CNNs, transformer models, and a clean web interface.
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 ## Project layout
 
